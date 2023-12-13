@@ -68,13 +68,13 @@ function App() {
     <div className="App">
       <h1>React Students</h1>
       <ul>
-        {students.map(thing => {
+        {students.map(kid => {
           return (
             <li>
-              <h2>{thing.name}</h2>
-              <h3>{thing.bio}</h3>
+              <h2>{kid.name}</h2>
+              <h3>{kid.bio}</h3>
               <ul>
-                {thing.scores.map(grade => {
+                {kid.scores.map(grade => {
                   return (
                     <li>
                       <h3>Date: {grade.date} Score: {grade.score}</h3>

@@ -1,0 +1,84 @@
+.App {
+  min-height:100vh;
+  font-family:sans-serif;
+  max-width: 1000px;
+  margin:auto;
+}
+
+.Header, .Footer, main{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+img{
+  width: 100%;
+}
+
+.Header h1{
+  color: tomato;
+}
+
+.Nav ul{
+  display:flex;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Nav ul li{
+  color:grey;
+  list-style: none;
+  text-decoration: underline;
+}
+
+.FooterNav ul{
+  display:flex;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Article h2{
+  font-size:xx-large
+}
+
+.FooterNav ul li{
+  color: tomato;
+  list-style: none;
+}
+
+.Article{
+  margin-bottom:4rem;
+  border-bottom: 1px solid grey;
+  padding-bottom: 2rem;
+
+}
+
+.Article .text::first-letter{
+  float:left;
+  line-height:40px;
+  font-size: 55px;
+  padding: 5px;
+  margin: 0px 5px -5px 0px;
+  color: grey;
+}
+
+.copyright{
+  color: grey;
+}
+
+.Continues{
+  color: tomato;
+  text-align: right;
+  font-weight: bolder;
+}
+
+.date{
+  color:grey;
+}
