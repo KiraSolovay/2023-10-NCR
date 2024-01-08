@@ -1,12 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import { getAllStarships } from './services/sw-api';
 
-function App() {
+const App = () => {
+  const [starships, setStarships] = useState([]);
+
+  useEffect(() => {
+    // Fetch starships data when the component mounts
+    getAllStarships().then(data => setStarships(data));
+  }, []);
+
   return (
-    <div className="App">
-      
+    <div className="app">
+      {starships.map(starship => (
+        <div key={starship.name}>
+          <p>{starship.name}</p>
+          {/* Add other starship information as needed */}
+        </div>
+      ))}
     </div>
   );
-}
+};
 
 export default App;
